@@ -63,7 +63,7 @@ predictions_steps = 4
 watts_to_joules = 3600
 
 
-day = 20
+day = 15
 month = 3
 year = 2024
 first_prediction = datetime.datetime(year, month, day, 18, 0)
