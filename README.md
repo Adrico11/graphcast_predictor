@@ -1,31 +1,25 @@
 # Steps:
 
-1. Create the docker iamge.
-2. Run the docker image, creating a container.
-3. While the docker image is running, open another terminal and enter the docker container.
-4. Execute "python3 prediction.py".
-
-<br>
-
-### Command to build docker image:
+0. Add a .cdsapirc file to the folder containing the url and key for the [CDS API](https://cds.climate.copernicus.eu/api-how-to) connection.
+1. Build the docker iamge with the dockerfile:
 
 ```
 docker build -f graphcast.dockerfile -t graphcast .
 ```
 
-### Command to run docker image using the compose file:
+2. Run the docker image using the compose file, creating a container:
 
 ```
 docker compose -f graphcast.yaml up
 ```
 
-### Command to enter the terminal and execute instructions:
+3. While the docker image is running, open another terminal and enter the docker container:
 
 ```
 docker exec -it graphcast /bin/bash
 ```
 
-### Running the prediction file:
+4. Run the prediction file:
 
 ```
 python3 prediction.py
