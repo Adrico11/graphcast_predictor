@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  graphcast:
+    container_name: graphcast
+    image: graphcast
+    stdin_open: true
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    volumes:
+      - ./:/app #C:\Users\path:/app
+
