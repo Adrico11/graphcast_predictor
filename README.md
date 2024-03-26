@@ -1,7 +1,7 @@
 # Run Graphcast to make weather predictions:
 
 0. Add a .cdsapirc file to the folder containing the url and key for the [CDS API](https://cds.climate.copernicus.eu/api-how-to) connection.
-1. Set the date of your choice in the prediction.py file (check data is available for this date on the "ERA5 hourly data on single levels from 1940 to present" dataset
+1. Set the date of your choice in the prediction.py file (check data is available for this date on the ["ERA5 hourly data on single levels from 1940 to present" dataset](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview)
 2. Build the docker iamge with the dockerfile:
 
 ```
